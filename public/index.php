@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -6,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
   </head>
-
   
   <body>
-    <? php echo "Hello world " ?> 
-	<script src="index.js"></script>
+    <?php echo "Hello world"; ?> 
+    <script src="index.js"></script>
   </body>
 </html>
