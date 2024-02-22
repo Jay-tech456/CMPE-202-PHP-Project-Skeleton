@@ -8,5 +8,11 @@ Thumbs.db
 
 /.env .*
 
+# Logs and Cache files
+/Application/Runtime/
+
+# Common configure file
+/Application/Common/Conf/config.php
+
 
 
