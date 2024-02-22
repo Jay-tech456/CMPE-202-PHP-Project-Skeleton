@@ -6,12 +6,14 @@
     https://www.docker.com/products/docker-desktop/
 
 Step 2: Build the Docker Container
-Using your terminal or command prompt, navigate to the directory containing your Dockerfile: 
+Using your terminal or command prompt, navigate to the directory containing the docker file: 
  <br>
     docker build -t run-php-application .
 
+ <br> (I personally use Bash in VS code)
+
 Step 3: Run the Docker Image
-Once the Docker image is successfully built, run it using the following command to run it: 
+Once the Docker image is successfully built, run it using the following command: 
   <br>  
     docker run -p 3000:3000 run-php-application
     
