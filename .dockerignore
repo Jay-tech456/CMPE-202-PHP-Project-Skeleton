@@ -1,4 +1,0 @@
-# For now, do not include the .env and .md file
-.env
-
-*.md
