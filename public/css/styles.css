@@ -36,6 +36,13 @@ button{
   font-weight: 100px;
 }
 
+.card img{ 
+
+  height: 10rem;
+  width: 10rem;
+  margin: 10px 10px; 
+}
+
 
 .card {
     display: inline-block; /* Ensure cards display horizontally */

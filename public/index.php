@@ -7,12 +7,25 @@
   </head>
 
   <body>
+
+
+    <section> 
+        <div class = "navBar">
+        <a href="#about"> About</a>
+        <a href="#services"> Service</a>
+        <a href="#News">News</a>
+        <a href="#contactUs">Contact</a>
+        <a onclick="userLogin()" id="login">User Login</a>
+      </div>
+
+
+    </section>
     <section class = "Cover container" >
 
-      <div class = "front-text">
-      <h1> Coffee Ex-Press-O </h1>
-    </div>
+      
+     
       </section>
+      <h1> ☕ Coffee Ex-Press-O ☕</h1>
 
     <section id = "about" class = "container">
 
@@ -40,17 +53,20 @@
       <h1> News </h1>
       <div id="newsCardContainer"> </div> 
     </section>
-
-
     <section id = "contactUs">
       <h1> Contact Us </h1>
+
+
       <?php 
         // find the file path 
-        $filePath = "contactInfo.txt"; 
+
+        try{ 
+        $filePath = "./textfiles/contactInfo.txt"; 
         // See if it can locate the file path
         if (!file_exists($filePath)) {
-          echo "didnt Find the file"; 
+          throw new Exception("Failed to open file"); 
         } else {
+
           // once the file exist, we need to read it
           $file_handle = fopen($filePath, "r");
 
@@ -62,9 +78,13 @@
         // Close the file handle
         fclose($file_handle);
         }
+      } catch (Exception $e) {
+        echo "". $e->getMessage() ."";
+      }
       ?>
+      
     </section>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="js/index.js"></script>
   </body>
 </html>
